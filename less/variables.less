@@ -12,3 +12,83 @@
 @shark: #212529;
 @eastern-blue: #17A2B8;
 @sandy-beach: #FFEBCD;
+
+@mobile: ~"(max-width: 500px)";
+
+
+ 
+
+// @media @mobile{
+     
+// }
+// .container {
+//     max-width: 800px;
+//     width: 100%;
+//     margin: 0 auto;
+// }
+@media @mobile{
+  body{
+      // header-nav
+    header {
+      .container {
+        flex-direction: column;
+        justify-content: space-around;
+        nav {
+          min-width: 100%;
+        }
+      }
+    }
+    // home-container
+    .home {
+      width: 90vw;
+
+      //hero
+      .hero-header {
+        .hero-image {
+          height: 25vh;
+        }
+      }
+     
+      // content
+      .content-section {
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        
+        .text-content {
+          width: 100%;
+          padding-right: 0;
+          margin-bottom: 1em;
+        }
+
+        .img-content {
+          width: 100%;
+          padding-left: 0;
+          img {
+            border-radius: 10px;
+          }
+        }
+    }
+     .inverse-content {
+       flex-direction: column-reverse;
+     }
+
+    //  destinations
+     .content-destination {
+       width: 100%;
+     }
+
+    //  content-pick
+     .content-pick {
+       width: 75vw;
+       margin: 0 auto;
+       flex-direction: column;
+
+       .destination {
+         width: 100%;
+       }
+     }
+
+  }
+}
+}
