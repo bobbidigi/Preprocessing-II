@@ -18,22 +18,20 @@
     flex-wrap: nowrap;
   }
   body .home .content-section .text-content {
-    width: 100%;
-    padding-right: 0;
-    margin-bottom: 1em;
+    min-width: 100%;
   }
   body .home .content-section .img-content {
-    width: 100%;
-    padding-left: 0;
+    min-width: 100%;
   }
   body .home .content-section .img-content img {
-    border-radius: 10px;
+    width: 100%;
+    height: auto;
   }
   body .home .inverse-content {
     flex-direction: column-reverse;
   }
   body .home .content-destination {
-    width: 100%;
+    min-width: 100%;
   }
   body .home .content-pick {
     width: 75vw;
@@ -41,7 +39,7 @@
     flex-direction: column;
   }
   body .home .content-pick .destination {
-    width: 100%;
+    min-width: 100%;
   }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -215,6 +213,10 @@ img {
   margin: 0 auto;
 }
 header {
+  top: 0;
+  width: 100%;
+  position: fixed;
+  background: #fff;
   border-bottom: 2px dashed #C0C0C0;
 }
 header .container {
@@ -248,66 +250,82 @@ header .container nav a:hover {
   font-size: 1.6rem;
   padding: 20px;
 }
-.home .hero-header {
+body {
+  background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 60%, #fff), linear-gradient(70deg, #dbedff 32%, #69f88d);
+}
+body .home {
+  margin-top: 10rem;
+}
+body .home .hero-header {
+  background: #fff;
+  box-shadow: 0px 1px 29px 1px rgba(0, 0, 0, 0.61);
+  border-radius: 0.5rem;
+  overflow: hidden;
   border-bottom: 2px dashed #C0C0C0;
 }
-.home .hero-header .hero-image {
+body .home .hero-header .hero-image {
   height: 33vh;
   background-image: url("/img/fun-bus.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.home .hero-header .text-content {
-  padding: 2em 0;
+body .home .hero-header .text-content {
+  padding: 2em;
 }
-.home .content-section {
+body .home .content-section {
+  background: #fff;
+  box-shadow: 0px 1px 29px 1px rgba(0, 0, 0, 0.61);
+  border-radius: 0.5rem;
+  overflow: hidden;
   margin: 30px 0;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
-.home .content-section .text-content {
+body .home .content-section .text-content {
   width: 48%;
-  padding-right: 1%;
+  padding: 2rem;
 }
-.home .content-section .img-content {
+body .home .content-section .img-content {
   width: 48%;
-  padding-left: 1%;
 }
-.home .content-section .img-content img {
-  border-radius: 10px;
+body .home .content-section .img-content img {
+  height: 100%;
+  width: auto;
 }
-.home .inverse-content {
-  padding-bottom: 30px;
+body .home .inverse-content {
   border-bottom: 2px dashed #C0C0C0;
 }
-.home .inverse-content .text-content {
-  padding-left: 1%;
-  padding-right: 0;
+body .home .inverse-content .text-content {
+  padding: 2rem;
 }
-.home .inverse-content .img-content {
-  padding-right: 1%;
-  padding-left: 0;
-}
-.home .content-destination {
+body .home .content-destination {
+  background: #fff;
+  box-shadow: 0px 1px 29px 1px rgba(0, 0, 0, 0.61);
+  border-radius: 0.5rem;
+  overflow: hidden;
   width: 75%;
   margin: 0 auto 30px;
 }
-.home .content-destination img {
-  border-radius: 10px;
+body .home .content-destination .text-content {
+  padding: 2rem;
 }
-.home .content-pick {
+body .home .content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
 }
-.home .content-pick .destination {
+body .home .content-pick .destination {
+  background: #fff;
+  box-shadow: 0px 1px 29px 1px rgba(0, 0, 0, 0.61);
+  border-radius: 0.5rem;
+  overflow: hidden;
   width: 30%;
+  padding: 2rem;
   margin-bottom: 30px;
 }
-.home .content-pick .destination .btn {
+body .home .content-pick .destination .btn {
   font-size: 1.5em;
   border-radius: 5px;
   color: #fff;
@@ -316,7 +334,7 @@ header .container nav a:hover {
   background: #039e7d;
   cursor: pointer;
 }
-.home .content-pick .destination .btn:hover {
+body .home .content-pick .destination .btn:hover {
   background: #fff;
   color: #039e7d;
   border: 1px solid #039e7d;
