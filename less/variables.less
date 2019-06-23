@@ -15,17 +15,6 @@
 
 @mobile: ~"(max-width: 500px)";
 
-
- 
-
-// @media @mobile{
-     
-// }
-// .container {
-//     max-width: 800px;
-//     width: 100%;
-//     margin: 0 auto;
-// }
 @media @mobile{
   body{
       // header-nav
@@ -47,6 +36,8 @@
         .hero-image {
           height: 25vh;
         }
+        .text-content{
+        }
       }
      
       // content
@@ -56,16 +47,14 @@
         flex-wrap: nowrap;
         
         .text-content {
-          width: 100%;
-          padding-right: 0;
-          margin-bottom: 1em;
+          min-width: 100%;
         }
 
         .img-content {
-          width: 100%;
-          padding-left: 0;
+          min-width: 100%;
           img {
-            border-radius: 10px;
+            width: 100%;
+            height: auto;
           }
         }
     }
@@ -75,7 +64,7 @@
 
     //  destinations
      .content-destination {
-       width: 100%;
+       min-width: 100%;
      }
 
     //  content-pick
@@ -85,7 +74,7 @@
        flex-direction: column;
 
        .destination {
-         width: 100%;
+         min-width: 100%;
        }
      }
 
