@@ -1,1 +1,341 @@
-/* LESS needs to be processed */
+@media (max-width: 500px) {
+  body header .container {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  body header .container nav {
+    min-width: 100%;
+  }
+  body .home {
+    width: 90vw;
+  }
+  body .home .hero-header .hero-image {
+    height: 25vh;
+  }
+  body .home .content-section {
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  body .home .content-section .text-content {
+    min-width: 100%;
+  }
+  body .home .content-section .img-content {
+    min-width: 100%;
+  }
+  body .home .content-section .img-content img {
+    width: 100%;
+    height: auto;
+  }
+  body .home .inverse-content {
+    flex-direction: column-reverse;
+  }
+  body .home .content-destination {
+    min-width: 100%;
+  }
+  body .home .content-pick {
+    width: 75vw;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+  body .home .content-pick .destination {
+    min-width: 100%;
+  }
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Indie Flower', cursive;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3.2rem;
+  padding-bottom: 10px;
+}
+h4 {
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+p {
+  line-height: 1.5;
+  font-size: 1.6rem;
+  padding-bottom: 10px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+header {
+  top: 0;
+  width: 100%;
+  position: fixed;
+  background: #fff;
+  border-bottom: 2px dashed #C0C0C0;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container nav {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  padding: 2em 0;
+}
+header .container nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2em;
+}
+header .container nav a:hover {
+  text-decoration: underline;
+  color: #666;
+}
+.footer {
+  width: 100%;
+  border-top: 2px dashed silver;
+  background: #FFEBCD;
+}
+.footer p {
+  text-align: center;
+  color: #212529;
+  font-size: 1.6rem;
+  padding: 20px;
+}
+body {
+  background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 60%, #fff), linear-gradient(70deg, #dbedff 32%, #69f88d);
+}
+body .home {
+  margin-top: 10rem;
+}
+body .home .hero-header {
+  background: #fff;
+  box-shadow: 0px 1px 29px 1px rgba(0, 0, 0, 0.61);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border-bottom: 2px dashed #C0C0C0;
+}
+body .home .hero-header .hero-image {
+  height: 33vh;
+  background-image: url("/img/fun-bus.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body .home .hero-header .text-content {
+  padding: 2em;
+}
+body .home .content-section {
+  background: #fff;
+  box-shadow: 0px 1px 29px 1px rgba(0, 0, 0, 0.61);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+body .home .content-section .text-content {
+  width: 48%;
+  padding: 2rem;
+}
+body .home .content-section .img-content {
+  width: 48%;
+}
+body .home .content-section .img-content img {
+  height: 100%;
+  width: auto;
+}
+body .home .inverse-content {
+  border-bottom: 2px dashed #C0C0C0;
+}
+body .home .inverse-content .text-content {
+  padding: 2rem;
+}
+body .home .content-destination {
+  background: #fff;
+  box-shadow: 0px 1px 29px 1px rgba(0, 0, 0, 0.61);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  width: 75%;
+  margin: 0 auto 30px;
+}
+body .home .content-destination .text-content {
+  padding: 2rem;
+}
+body .home .content-pick {
+  padding-top: 30px;
+  border-top: 2px dashed #C0C0C0;
+  display: flex;
+  justify-content: space-between;
+}
+body .home .content-pick .destination {
+  background: #fff;
+  box-shadow: 0px 1px 29px 1px rgba(0, 0, 0, 0.61);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  width: 30%;
+  padding: 2rem;
+  margin-bottom: 30px;
+}
+body .home .content-pick .destination .btn {
+  font-size: 1.5em;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  padding: 0.5em;
+  background: #039e7d;
+  cursor: pointer;
+}
+body .home .content-pick .destination .btn:hover {
+  background: #fff;
+  color: #039e7d;
+  border: 1px solid #039e7d;
+}
